@@ -13,7 +13,7 @@
 # 🔍 Key Features:
 - Responsive Layout: Optimized for different devices using viewport meta tag.
 
-# Profile Section:
+-  Profile Section:
 
 - Displays a user image (photo.jpg)
 
