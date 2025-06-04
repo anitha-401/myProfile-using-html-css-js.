@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Profile Page</title>
+  <style>
+    body {
+      background-color: rgb(219, 173, 230);
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      border: 3px solid darkblue;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    .bold-text {
+      font-weight: bold;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: darkblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: navy;
+    }
+
+    #helloSection {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    #helloInput {
+      padding: 10px;
+      width: 200px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Profile Page</h1>
+
+  <div class="profile">
+    <img src="photo.jpg" alt="My Photo">
+    <p class="intro">
+      Hello! My name is <span class="bold-text">Shivarathri Anitha</span>.  
+      I'm currently pursuing btech final year. My hobbies are playing badminton & listening to music!
+    </p>
+  </div>
+
+  <form>
+    <h2>Contact Me</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="helloSection">
+    <h2>Say Hello!</h2>
+    <input type="text" id="helloInput" placeholder="Enter your name">
+    <button onclick="sayHello()">Say Hello</button>
+  </div>
+
+  <script>
+    function sayHello() {
+      const name = document.getElementById("helloInput").value;
+      if (name.trim() !== "") {
+        alert("Hello, " + name + "!");
+      } else {
+        alert("Please enter your name.");
+      }
+    }
+  </script>
+
+</body>
+</html>
