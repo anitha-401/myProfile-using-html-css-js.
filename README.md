@@ -6,7 +6,7 @@
 # 🧰 Technologies Used:
 - HTML5: Structure and layout of the page
 
-# CSS3: Styling and layout enhancements
+- CSS3: Styling and layout enhancements
 
 - JavaScript: Adds interactivity (greeting functionality)
 
